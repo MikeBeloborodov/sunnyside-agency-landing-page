@@ -1,0 +1,83 @@
+:root {
+  --clr-header-links: #FFF;
+  --clr-slogan: #FFF;
+  --clr-hamburger-line: #FFF;
+}
+
+.header {
+  padding: 32px 24px 0;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.header__nav-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 88px 0; 
+}
+
+.header__logo {
+  width: 123px;
+}
+
+.header__nav {}
+
+.header__nav-list {}
+
+.desktop {
+  display: none;
+}
+
+.header__nav-list-item {}
+
+.header-link {
+  color: var(--clr-header-links);
+  text-decoration: none;
+}
+
+.contact-button {}
+
+.header__hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: none;
+  padding: 3px 0 0 0;
+  background-color: transparent;
+}
+
+.header__hamburger-line {
+  width: 24px;
+  height: 2px;
+  background-color: var(--clr-hamburger-line);
+}
+
+.header__cover-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 0 0 135px 0;
+}
+
+.header__slogan {
+  color: #FFF;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 6.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__arrow-icon {
+  width: 35px;
+}
+
+@media screen and (max-width: 335px) {
+  .header__slogan {
+    font-size: 30px;
+  } 
+}
