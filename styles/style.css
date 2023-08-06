@@ -93,18 +93,10 @@
 .about {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 312px 438px 310px 438px 600px 600px;
+  grid-template-rows: 1fr 1.415fr 1fr 1.415fr 1.93fr 1.93fr;
 }
 
 .about__image-container {}
-
-.image-egg {
-  padding: 140px 0;
-  background-image: url(../images/mobile/image-transform.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
 
 .info-card {
   padding: 10px 30px;
@@ -165,15 +157,19 @@
   background-color: var(--clr-dark_accent);
 }
 
-.image-wine-glass {
-  background-image: url(../images/mobile/image-stand-out.jpg);
+.image-egg {
+  padding: 140px 0;
+  background-image: url(../images/mobile/image-transform.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
 }
 
-.image-card {
-  text-align: center;
+.image-wine-glass {
+  background-image: url(../images/mobile/image-stand-out.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 .image-cherry {
@@ -188,6 +184,10 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+.image-card {
+  text-align: center;
 }
 
 .image-card__heading {
