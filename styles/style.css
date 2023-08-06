@@ -5,9 +5,10 @@
   --graphic-design-text: hsl(167, 40%, 24%);
   --clr-photography-text: hsl(198, 62%, 26%);
   --clr-footer-background: hsl(168, 34%, 41%);
-  --clr-link-red: hsl(7, 99%, 70%);
-  --clr-link-yellow: hsl(51, 100%, 49%);
-  --clr-yellow: rgb(255, 244, 190);
+  --clr-link-dark: hsl(7, 99%, 70%);
+  --clr-dark_accent: rgb(255, 221, 213);
+  --clr-link-bright: hsl(51, 100%, 49%);
+  --clr-bright_accent: rgb(255, 244, 190);
   --clr-dark-headings: hsl(212, 27%, 19%);
   --clr-dark-links: hsl(212, 27%, 19%);
   --clr-paragraph: hsl(232, 10%, 55%);
@@ -133,10 +134,32 @@
   text-decoration: none;
   font-family: 'Fraunces', serif;
   font-weight: 900;
-  font-size: 17px;
+  font-size: 16px;
   text-transform: uppercase;
   color: var(--clr-dark-links);
-  padding: 0 3px 0 0;
+  padding: 0 3px 58px 0;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.5px;
+}
+
+.accent_underline::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: -6px;
+  inline-size: 109%;
+  block-size: 10px;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.bright_accent::after {
+  background-color: var(--clr-bright_accent);
+}
+
+.dark_accent::after {
+  background-color: var(--clr-dark_accent);
 }
 
 .image-wine-glass {
