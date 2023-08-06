@@ -2,7 +2,7 @@
   --clr-header-links: #FFF;
   --clr-slogan: #FFF;
   --clr-hamburger-line: #FFF;
-  --graphic-design-text: hsl(167, 40%, 24%);
+  --clr-graphic-design-text: hsl(167, 40%, 24%);
   --clr-photography-text: hsl(198, 62%, 26%);
   --clr-footer-background: hsl(168, 34%, 41%);
   --clr-link-dark: hsl(7, 99%, 70%);
@@ -28,11 +28,12 @@
 .header__nav-section {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 88px 0;
+  margin: 0 0 84px;
 }
 
 .header__logo {
-  width: 123px;
+  inline-size: 123px;
+  cursor: pointer;
 }
 
 .header__nav {}
@@ -62,8 +63,8 @@
 }
 
 .header__hamburger-line {
-  width: 24px;
-  height: 2px;
+  inline-size: 24px;
+  block-size: 2px;
   background-color: var(--clr-hamburger-line);
 }
 
@@ -86,13 +87,13 @@
 }
 
 .header__arrow-icon {
-  width: 35px;
+  inline-size: 35px;
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 312px 1fr 310px 1fr 1fr 1fr;
+  grid-template-rows: 312px 438px 310px 438px 600px 600px;
 }
 
 .about__image-container {}
@@ -137,10 +138,12 @@
   font-size: 16px;
   text-transform: uppercase;
   color: var(--clr-dark-links);
-  padding: 0 3px 58px 0;
+  padding: 0 3px 0 0;
+  margin: 0 0 59px;
   position: relative;
   z-index: 1;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .accent_underline::after {
@@ -169,7 +172,9 @@
   background-size: cover;
 }
 
-.image-card {}
+.image-card {
+  text-align: center;
+}
 
 .image-cherry {
   background-image: url(../images/mobile/image-graphic-design.jpg);
@@ -185,9 +190,30 @@
   background-size: cover;
 }
 
-.image-card__heading {}
+.image-card__heading {
+  font-family: 'Fraunces', serif;
+  margin: 397px 0 0;
+  font-size: 28.8px;
+  text-transform: capitalize;
+  font-weight: 900;
+  letter-spacing: -0.6px;
+}
 
-.image-card__text {}
+.image-card__text {
+  margin: 27px 0 0;
+  line-height: 1.7;
+  padding: 0 20px;
+  color: var(--clr-graphic-design-text);
+  letter-spacing: -0.1px;
+}
+
+.image-cherry .image-card__heading, .image-card__text {
+  color: var(--clr-graphic-design-text);
+}
+
+.image-mandarin .image-card__heading, .image-card__text {
+  color: var(--clr-photography-text);
+}
 
 @media screen and (min-width: 375px) {
   .header__slogan {
