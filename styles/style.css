@@ -277,29 +277,29 @@
 
 .image-gallery {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .image-gallery__image {
-  block-size: 186px;
   object-fit: cover;
   object-position: center;
+  block-size: 186px;
 }
 
 .footer {
-  padding: 68px 0;
   display: grid;
-  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  padding: 68px 0 76px;
   background-color: var(--clr-footer-background);
 }
 
-.footer__logo-link{
-  inline-size: 100%;
+.footer__logo-link {
   grid-column: 1 / 4;
   margin: 0 0 40px;
+  inline-size: 100%;
 }
 
 .footer__logo-img {
@@ -309,8 +309,8 @@
 
 .footer__link {
   color: var(--clr-footer-title);
-  text-decoration: none;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .footer__link:not(:nth-child(2)) {
@@ -319,14 +319,80 @@
 
 .footer__icons-container {
   display: flex;
-  gap: 31px;
-  inline-size: 100%;
   grid-column: 1 / 4;
+  gap: 31px;
   padding: 40px 109px 0 104px;
+  inline-size: 100%;
 }
 
 @media screen and (min-width: 375px) {
   .header__slogan {
     font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .desktop {
+    display: initial;
+  }
+
+  .header {
+    padding: 34px 40px 0;
+    background-image: url(../images/desktop/image-header.jpg);
+  }
+
+  .header__logo {
+    cursor: pointer;
+    inline-size: 170px;
+    block-size: 34px;
+    margin: 5px 0 0 0;
+  }
+
+  .header__nav-section {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 104px 0;
+  }
+
+  .header__hamburger {
+    display: none;
+  }
+
+  .header__nav {
+    margin: 0 0 0 auto;
+  }
+
+  .header__nav-list {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+  }
+
+  .header__nav-list-item {}
+
+  .header-link {
+    font-size: 18px;
+  }
+
+  .contact-button {
+    margin: 0 8px 0 47px;
+    font-family: 'Frauces', serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 33px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    border: none;
+  }
+
+  .header__slogan {
+    font-size: 58px;
+    letter-spacing: 7.8px;
+  }
+
+  .header__cover-section {
+    gap: 95px;
+    padding: 0 0 330px 0;
   }
 }
