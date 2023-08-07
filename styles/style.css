@@ -395,4 +395,83 @@
     gap: 95px;
     padding: 0 0 330px 0;
   }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px 600px;
+  }
+
+  .image-egg {
+    background-image: url(../images/desktop/image-transform.jpg);
+  }
+
+  .image-wine-glass {
+    background-image: url(../images/desktop/image-stand-out.jpg);
+  }
+
+  .image-cherry {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+
+  .image-mandarin {
+    background-image: url(../images/desktop/image-photography.jpg);
+  }
+
+  .grid-item:nth-child(2) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .info-card {
+    align-items: flex-start;
+    padding: 156px 110px 0 166px;
+  }
+
+  .info-card__heading {
+    padding: 0 0 30px 0;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: -0.5px;
+  }
+
+  .info-card__text {
+    padding: 0 0 42px 0;
+    font-size: 18px;
+    line-height: 1.69;
+    letter-spacing: -0.12px;
+    text-align: left;
+  }
+
+  .info-card__link {
+    margin: 0 0 0;
+    padding: 0 0 0 8px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .accent_underline::after {
+    left: 0px;
+    inline-size: 105%;
+  }
+
+  .grid-item:nth-child(4) {
+    padding: 156px 170px 0 110px;
+  }
+
+  .grid-item:nth-child(4) .info-card__heading {
+    letter-spacing: -0.2px;
+  }
+
+  .image-card {
+    text-align: center;
+  }
+
+  .image-card__heading {
+    margin: 395px 0 0;
+  }
+
+  .image-card__text {
+    padding: 0 190px;
+  }
 }
