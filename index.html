@@ -141,26 +141,50 @@
         </article>
       </section>
       <section class="image-gallery">
-        <img
-          class="image-gallery__image"
-          src="images/mobile/image-gallery-milkbottles.jpg"
-          alt="Many milk bottles in front of the bright blue sky."
-        />
-        <img
-          class="image-gallery__image"
-          src="images/mobile/image-gallery-orange.jpg"
-          alt="An orange on a white plate that resembles an egg yoke."
-        />
-        <img
-          class="image-gallery__image"
-          src="images/mobile/image-gallery-cone.jpg"
-          alt="An ice-cream cone in front of the bright blue sky."
-        />
-        <img
-          class="image-gallery__image"
-          src="images/mobile/image-gallery-sugar-cubes.jpg"
-          alt="Many sugar cubes with a pink background."
-        />
+        <picture class="image-gallery__picture">
+          <source
+            srcset="images/desktop/image-gallery-milkbottles.jpg"
+            media="(min-width: 1400px)"
+          />
+          <img
+            class="image-gallery__image"
+            src="images/mobile/image-gallery-milkbottles.jpg"
+            alt="Many milk bottles in front of the bright blue sky."
+          />
+        </picture>
+        <picture class="image-gallery__picture">
+          <source
+            srcset="images/desktop/image-gallery-orange.jpg"
+            media="(min-width: 1400px)"
+          />
+          <img
+            class="image-gallery__image"
+            src="images/mobile/image-gallery-orange.jpg"
+            alt="An orange on a white plate that resembles an egg yoke."
+          />
+        </picture>
+        <picture class="image-gallery__picture">
+          <source
+            srcset="images/desktop/image-gallery-cone.jpg"
+            media="(min-width: 1400px)"
+          />
+          <img
+            class="image-gallery__image"
+            src="images/mobile/image-gallery-cone.jpg"
+            alt="An ice-cream cone in front of the bright blue sky."
+          />
+        </picture>
+        <picture class="image-gallery__picture">
+          <source
+            srcset="images/desktop/image-gallery-sugarcubes.jpg"
+            media="(min-width: 1400px)"
+          />
+          <img
+            class="image-gallery__image"
+            src="images/mobile/image-gallery-sugar-cubes.jpg"
+            alt="Many sugar cubes with a pink background."
+          />
+        </picture>
       </section>
     </main>
     <footer class="footer">

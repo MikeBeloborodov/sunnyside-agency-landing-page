@@ -331,7 +331,7 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
   .desktop {
     display: initial;
   }
@@ -507,8 +507,25 @@
   }
 
   .testimonial-card__occupation {
-    color: var(--clr-testimonials-text-desaturated);
     font-size: 14px;
     padding: 0 16px 0 0;
+  }
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .image-gallery__picture {
+    block-size: 445px;
+    inline-size: 100%;
+  }
+
+  .image-gallery__image {
+    object-fit: cover;
+    object-position: center;
+    block-size: 100%;
+    inline-size: 100%;
   }
 }
